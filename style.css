@@ -2,15 +2,18 @@ body {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid rgb(247, 6, 6);
+    /* border: 1px solid rgb(98, 0, 255); */
+    
 }
 
 #containerr{
-    width: 100%;
+    width: 100vw;
+    padding: 0px;
+    margin: 0;
 }
 
 #sec1 {
@@ -18,8 +21,9 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0.8em 1.8em;
-    box-shadow: 20px 20px 50px black;  
+    /* padding: 0.8em 1.8em; */
+
+    overflow: hidden;
 }
 
 
@@ -70,12 +74,11 @@ body {
     
 }
 .sec21 a:hover{
-    border: solid 1px white;
-    margin: 1em 1em;
-    background-color: white;
-    color: black;
-    transition: 0.5s;
-    border-radius: 10%;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 2px;
+    transition: 0.95s;
+    
 }
 
 .sec22 a{
@@ -88,12 +91,10 @@ body {
 }
 
 .sec22 a:hover{
-    border: solid 1px white;
-    margin: 1em 1em;
-    background-color: white;
-    color: black;
-    transition: 0.5s;
-    border-radius: 10%;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 1px;
+    transition: 0.95s;
 }
 .sec22 {
     display: flex;
@@ -102,14 +103,14 @@ body {
 }
 
 #btn{
-    width: 4em;
-    height: 2em;
+    width: 2em;
+    height: 1em;
+    font-size: 16px;
     cursor: pointer;
     background-color: rgb(252, 147, 9);
     color: #060236;
     font-weight: bold;
     border: 1px solid none;
-    box-shadow: 2px 3px 4px rgb(255, 82, 2);
     border-radius: 20px;
     display: none;
 }
@@ -133,12 +134,6 @@ body {
 #sec3 img{
     height: 20em;
     width: 100%;  
-    
-}
-#sec3 img:hover{
-    border: 2px solid red;
-    transition: 0.5s;
-    
     
 }
 
@@ -192,7 +187,7 @@ body {
 
 #sec4 {
     background-color: white;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     padding: 0.99em;
@@ -331,16 +326,42 @@ body {
 }
 
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 480px) {
+
+        #containerr{
+            width: 100vw;
+        }
+
+        #sec1 {
+            padding: 0.8em 1.8em;
+            /* box-shadow: 20px 20px 50px black;   */
+        }
+        
+        
+        .sec11 {
+            padding-right: 3em;
+        }
+        
+        #sec1 .sec11 img {
+            height: 5em;
+            width: 6em;
+        }
+        
+        .sec12 {
+            color: #060236;
+            font-size: 1.32em;
+        /*    word-spacing: 7px;*/
+        }
+        
         .sec21{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             position: fixed;
             height: 60vh;
-            width: 300px;
+            width: 150px;
             top: 0;
-            right: -350px;
+            right: -200px;
             align-items: flex-start;
             color: yellowgreen;
             background-color: #080833;
